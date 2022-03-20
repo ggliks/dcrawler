@@ -2,7 +2,6 @@
 # -*-coding:utf-8 -*-
 # @Time : 2022-03-14 21:29
 # @Author : y3ff18
-# @File : dcwler.py
 # @Version : python3.9
 import asyncio
 import sys
