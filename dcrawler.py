@@ -39,10 +39,10 @@ class Dcrawler():
 
     def argparse(self):
         parse = argparse.ArgumentParser()
-        parse.add_argument('-u','--url',help='Input a Url',default='http://www.njupt.edu.cn/')
+        parse.add_argument('-u','--url',help='Input a Url',default=None)
         parse.add_argument('-f','--file',help='Input a File Name',default=None)
         parse.add_argument('-t','--timeout',help='Set page timeout,default is 10s',default=10,type=int)
-        parse.add_argument('-d','--deep',help='Set max page amount,default is 1000',default=100,type=int)
+        parse.add_argument('-d','--deep',help='Set max page amount,default is 1000',default=1000,type=int)
         parse.add_argument('-op','--output',help='OutPut to a file',default=None)
         parse.add_argument('-p','--xray_port',help='Set Xray Port,default ip and port 127.0.0.1:7777',default=7777,type=int)
         parse.add_argument('-fuzz','--fuzz',help='if set this parameter,Start fuzz path,Set fuzz path file',default=None)
